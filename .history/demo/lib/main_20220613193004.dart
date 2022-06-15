@@ -1,6 +1,3 @@
-import 'package:demo/info_entry.dart';
-import 'package:demo/iterative_btn.dart';
-import 'package:demo/navbar.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -12,9 +9,11 @@ class myApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-       return MaterialApp(
-        theme: ThemeData.dark(),
-        home: InfoEntry(),
-      );
+    return MaterialApp(
+      home: Scaffold(appBar: AppBar(,
+      backgroundColor: Colors.blue,
+      title: const Text('Flutter is fun!')
+      )
+    ));
   }
 }
