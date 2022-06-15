@@ -85,20 +85,20 @@ class _iterativeBtnState extends State<iterativeBtn> {
                           child: Text('+'),
                           onPressed: () {
                             setState(() {
-                              shots_made++;
+                              count++;
                             });
                           },
                         )),
-                        Flexible(child: Text('$shots_made')),
+                        Flexible(child: Text('$count')),
                         Flexible(
                             child: TextButton(
                                 child: const Text('-'),
                                 onPressed: () {
                                   setState(() {
-                                    if (shots_made == 0) {
-                                      shots_made = 0;
+                                    if (count == 0) {
+                                      count = 0;
                                     } else {
-                                      shots_made--;
+                                      count--;
                                     }
                                   });
                                 }))

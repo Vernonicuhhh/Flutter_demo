@@ -95,10 +95,10 @@ class _iterativeBtnState extends State<iterativeBtn> {
                                 child: const Text('-'),
                                 onPressed: () {
                                   setState(() {
-                                    if (shots_made == 0) {
-                                      shots_made = 0;
+                                    if (count == 0) {
+                                      count = 0;
                                     } else {
-                                      shots_made--;
+                                      count--;
                                     }
                                   });
                                 }))
