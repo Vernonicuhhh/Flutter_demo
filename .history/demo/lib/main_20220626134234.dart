@@ -1,14 +1,10 @@
-import 'package:demo/InfoEntry.dart';
+import 'package:demo/info_entry.dart';
+import 'package:demo/iterative_btn.dart';
 import 'package:demo/navbar.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart'
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+void main() {
   runApp(myApp());
 }
 

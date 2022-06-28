@@ -4,6 +4,7 @@ import 'package:demo/iterative_btn.dart';
 import 'package:demo/navbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class InfoEntry extends StatefulWidget {
   InfoEntry({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class InfoEntry extends StatefulWidget {
 }
 
 class _InfoEntry extends State<InfoEntry> {
+  final Stream<QuerySnapshot> users = FireBaseFirestore.instance.collection('comments').snapshot()
   @override
   Widget build(BuildContext context) {
     return Scaffold(
